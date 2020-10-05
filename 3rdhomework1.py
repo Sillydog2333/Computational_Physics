@@ -1,10 +1,10 @@
 import numpy as np
 import time
 N = 1000000 
-start_time1 = time.time()
+
 Sup = np.float32(0)
 Sdn = np.float32(0)
-
+start_time1 = time.time()
 for i in range(1,N+1):
     Sup = np.float32(1/i + Sup)
     Sdn = np.float32(1/(N+1-i) + Sdn)
